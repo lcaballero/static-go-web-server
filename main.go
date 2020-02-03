@@ -10,7 +10,7 @@ func main() {
 	fs := http.FileServer(http.Dir("static"))
 	http.Handle("/", fs)
 
-	ip := "127.0.0.1"
+	ip := "0.0.0.0"
 	port := 3000
 	bind := fmt.Sprintf("%s:%d", ip, port)
 

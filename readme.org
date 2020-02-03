@@ -1,0 +1,21 @@
+* Purpose
+Quick and easy web server to serve static files.  Not very
+configurable, but the start of something very easy to extend.
+
+
+** Getting Started
+
+Run these commands:
+
+#+BEGIN_SRC 
+go install
+web
+#+END_SRC
+
+Should see in the terminal:
+
+#+BEGIN_SRC 
+binding server to 127.0.0.1:3000
+#+END_SRC
+
+Edit the code to your liking, etc.
