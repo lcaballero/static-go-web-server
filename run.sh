@@ -1,7 +1,7 @@
 #!/bin/bash
 
-run() {
-    docker run --rm -d \
+start() {
+    docker run -d \
 	   -p 3000:3000 \
 	   --name web \
 	   -v $(pwd)/static:/static \
@@ -10,6 +10,15 @@ run() {
 
 build() {
     docker build -t web:wip .
+}
+
+stop() {
+    docker container stop web
+    docker container rm web
+}
+
+reset() {
+    docker rmi web:wip
 }
 
 "$@"

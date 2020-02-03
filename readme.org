@@ -2,7 +2,6 @@
 Quick and easy web server to serve static files.  Not very
 configurable, but the start of something very easy to extend.
 
-
 ** Getting Started
 
 Run these commands:
@@ -19,3 +18,27 @@ binding server to 127.0.0.1:3000
 #+END_SRC
 
 Edit the code to your liking, etc.
+
+** Via Docker
+
+For convenience you can use the `run.sh` file to build and run the
+docker image.  Run the commands below to build the image and start the
+container.
+
+#+BEGIN_SRC 
+./run.sh build
+./run.sh start
+#+END_SRC
+
+When done simply stop and remove the container and the image.
+
+#+BEGIN_SRC 
+./run.sh reset
+#+END_SRC
+
+Or if you just want to stop the running container and keep the image
+run the following.
+
+#+BEGIN_SRC 
+./run.sh stop
+#+END_SRC
