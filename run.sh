@@ -21,4 +21,8 @@ reset() {
     docker rmi web:wip
 }
 
+logs() {
+    docker logs web
+}
+
 "$@"

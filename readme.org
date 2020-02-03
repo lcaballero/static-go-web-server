@@ -30,6 +30,18 @@ container.
 ./run.sh start
 #+END_SRC
 
+Once the container is started and running you can then use
+
+#+BEGIN_SRC 
+./run.sh logs
+#+END_SRC
+
+Which should output something like this
+
+#+BEGIN_SRC 
+2020/02/03 20:58:15 binding server to 0.0.0.0:3000
+#+END_SRC
+
 When done simply stop and remove the container and the image.
 
 #+BEGIN_SRC 
@@ -42,3 +54,5 @@ run the following.
 #+BEGIN_SRC 
 ./run.sh stop
 #+END_SRC
+
+
